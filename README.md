@@ -15,8 +15,8 @@ yarn add -D typescript
 # command line
 mkdir src
 cd src
-touch my-js.js
-touch my-ts.ts
+touch src/my-js.js
+touch src/my-ts.ts
 ```
 
 ## Step 2: Compiler intro
@@ -184,7 +184,9 @@ const greet : IGreet = (name) => `${name}!`
 # my-ts.ts
 
 // Interface
-type IGreeting = () => string
+interface IGreeting {
+  () : string
+}
 
 interface Person {
   readonly name: string,
@@ -239,4 +241,3 @@ getPokemon2('ditto', {
   timeout: 30000,
 })
 ```
-
